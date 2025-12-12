@@ -1,0 +1,103 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Navbar */
+.navbar {
+    width: 100%;
+    background: goldenrod;
+    padding: 15px 30px;
+    display: flex;
+    gap: 20px;
+}
+
+.navbar a {
+    text-decoration: none;
+    color: whitesmoke;
+    font-weight: bold;
+}
+
+/* Main content layout */
+.content {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding: 40px;
+}
+
+/* Left side */
+.left-box {
+    width: 50%;
+    display: flex;
+    gap: 20px;
+    align-items: flex-start;
+}
+
+.left-box img {
+    width: 180px;
+    height: 180px;
+    border-radius: 60%;
+    object-fit: cover;
+}
+
+.left-box p {
+    font-size: 18px;
+    line-height: 1.5;
+    color: #444;
+}
+
+/* Right side - Form */
+.right-box {
+    width: 35%;
+    background: #fafafa;
+    padding: 25px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+.right-box h2 {
+    margin-bottom: 20px;
+}
+
+.right-box form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.right-box input {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.right-box button {
+    padding: 10px;
+    border: none;
+    background: goldenrod;
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.right-box button:hover {
+    background: black;
+}
+.footer {
+    width: 100%;
+    background:goldenrod;
+    text-align: center;
+    text-decoration-color: whitesmoke;
+    padding: 15px 0;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+}
+
+
+button{
+    color: goldenrod;
+}
