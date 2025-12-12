@@ -18,6 +18,8 @@
 .navbar a {
     text-decoration: none;
     color: whitesmoke;
+    display:flex;
+    justify-content:flex-end;
     font-weight: bold;
 }
 
@@ -103,3 +105,4 @@ button{
     color: goldenrod;
 
 }
+
