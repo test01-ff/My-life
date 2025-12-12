@@ -1,8 +1,9 @@
+/* Using Roboto as the primary font for a cleaner, modern look */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: 'Roboto', Arial, Helvetica, sans-serif;
 }
 
 /* Navbar */
@@ -11,22 +12,35 @@
     background: goldenrod;
     padding: 15px 30px;
     display: flex;
-    justify-content:flex-end;
-    gap: 20px;
+    /* Aligns the brand to the start (left) and links to the end (right) */
+    justify-content: space-between; 
+    align-items: center;
 }
 
 .navbar a {
     text-decoration: none;
     color: whitesmoke;
-    display:flex;
-    justify-content:flex-end;
     font-weight: bold;
+}
+
+/* Specific styling for the brand name (Starwars) in the navbar */
+.navbar-brand {
+    font-size: 1.5em;
+    /* Optional: Add a subtle text shadow to make it pop */
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.3); 
+}
+
+/* Container for the right-aligned links */
+.nav-links {
+    display: flex;
+    gap: 20px;
 }
 
 /* Main content layout */
 .content {
     display: flex;
-    justify-content: flex-end;
+    /* Changed to space-between to keep the left and right boxes separated */
+    justify-content: space-between; 
     align-items: flex-start;
     padding: 40px;
 }
@@ -63,6 +77,7 @@
 
 .right-box h2 {
     margin-bottom: 20px;
+    color: #333;
 }
 
 .right-box form {
@@ -71,39 +86,48 @@
     gap: 15px;
 }
 
+.right-box label {
+    font-weight: bold;
+    color: #555;
+}
+
 .right-box input {
     padding: 10px;
     border: 1px solid #ccc;
     border-radius: 5px;
+    width: 100%; /* Make inputs fill the container width */
 }
 
+/* Specific button style for the form (text is white) */
 .right-box button {
     padding: 10px;
     border: none;
     background: goldenrod;
-    color: white;
+    color: white; /* Ensures the text is white as intended for form buttons */
     border-radius: 5px;
     cursor: pointer;
+    font-weight: bold;
+    margin-top: 10px;
 }
 
 .right-box button:hover {
-    background: black;
+    background: #c7923c; /* A slightly darker goldenrod for hover */
 }
+
+/* General button style (Removed conflict with form button style) */
+/* The previous general 'button' rule that set color: goldenrod is removed */
+
+
 .footer {
     width: 100%;
-    background:goldenrod;
+    background: goldenrod;
     text-align: center;
-    text-decoration-color: whitesmoke;
+    color: whitesmoke; /* Changed text-decoration-color to color for visibility */
     padding: 15px 0;
     position: fixed;
     bottom: 0;
     left: 0;
 }
 
-
-button{
-    color: goldenrod;
-
-}
 
 
