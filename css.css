@@ -40,7 +40,7 @@
 .content {
     display: flex;
     /* Changed to space-between to keep the left and right boxes separated */
-    justify-content: space-between; 
+    justify-content: flex-start; 
     align-items: flex-start;
     padding: 40px;
 }
@@ -128,5 +128,6 @@
     bottom: 0;
     left: 0;
 }
+
 
 
