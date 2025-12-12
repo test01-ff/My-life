@@ -26,7 +26,7 @@
 /* Main content layout */
 .content {
     display: flex;
-    justify-content: space-between;
+    justify-content: flex-end;
     align-items: flex-start;
     padding: 40px;
 }
@@ -105,4 +105,5 @@ button{
     color: goldenrod;
 
 }
+
 
